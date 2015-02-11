@@ -1,28 +1,47 @@
-== README
+1. Create new repo on github
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+2. git clone [repo url]
 
-Things you may want to cover:
+3. rails new . —database postgresql
 
-* Ruby version
+4. Add homepage (rails generate controller HomeController index)
 
-* System dependencies
+5. Add bootstrap-sass gem
 
-* Configuration
+6. add puma, Procfile, sample.env, and .env
 
-* Database creation
+7. Add SECRET_KEY_BASE to the sample.env file
 
-* Database initialization
+8. Show Heroku page for Rails 4 and the asset pipeline
 
-* How to run the test suite
+9. Unignore secrets.yml
 
-* Services (job queues, cache servers, search engines, etc.)
+10. test out ‘foreman start’, and explain why we use foreman
 
-* Deployment instructions
+11. push to heroku
 
-* ...
+12. Specify ruby version in the Gemfile
 
+13. add devise (use explicit gem version)
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+14. Add email configuration
+
+15. Best practice: use the pessimistic constraint (as recommended by rubygems.org)
+
+16. Add S3 upload
+
+17. Add Sidekiq
+
+<- we got this far
+
++ Implement manage users
+
+18. Implement seed file
+
+19. Add Figaro
+
+19. Update the README
+
+20. git push origin master, git push heroku master
+
+21. Demonstrate using it
