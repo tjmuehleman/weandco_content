@@ -15,6 +15,9 @@ class ToolsController < ApplicationController
   # GET /tools/new
   def new
     @tool = Tool.new
+
+    # get the content_block id
+    @content_block_id = params[:id]
   end
 
   # GET /tools/1/edit

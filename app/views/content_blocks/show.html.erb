@@ -10,5 +10,12 @@
   <%= @content_block.headline %>
 </p>
 
+<p>
+  <strong>Avatar:</strong>
+  <%= image_tag @content_block.avatar.url(:medium) %>
+
+</p>
+
+
 <%= link_to 'Edit', edit_content_block_path(@content_block) %> |
 <%= link_to 'Back', content_blocks_path %>

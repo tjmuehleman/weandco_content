@@ -19,10 +19,7 @@
     <%= f.label :url %><br>
     <%= f.text_field :url %>
   </div>
-  <div class="field">
-    <%= f.label :content_block_id %><br>
-    <%= f.number_field :content_block_id %>
-  </div>
+    <%= f.hidden_field :content_block_id, :value => @content_block_id %>
   <div class="actions">
     <%= f.submit %>
   </div>

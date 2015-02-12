@@ -1,3 +1,5 @@
+foreman start -e development.env
+
 1. Create new repo on github
 
 2. git clone [repo url]
