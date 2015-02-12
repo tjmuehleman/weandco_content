@@ -13,9 +13,15 @@
 <p>
   <strong>Avatar:</strong>
   <%= image_tag @content_block.avatar.url(:medium) %>
-
 </p>
 
-
+<hr>
+<h2>Tools:</h2><br>
+<% @content_block.tools.each do |tool| %>
+  
+  <%=link_to tool.name, tool.url%><br>
+<% end %>
+<%=link_to "add new tool", content_block_tool_path(@content_block.id)%>
+<br><br>
 <%= link_to 'Edit', edit_content_block_path(@content_block) %> |
 <%= link_to 'Back', content_blocks_path %>

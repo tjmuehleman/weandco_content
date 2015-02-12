@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  get 'content_block/:id/new_tool' => "tools#new"
+  get 'content_block/:id/new_tool' => "tools#new", as: "content_block_tool"
 
   resources :tools
 
