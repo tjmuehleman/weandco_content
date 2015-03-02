@@ -14,3 +14,25 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function() {
+
+	$('.step').css('opacity', 1);
+	$('.hero').css('opacity', 1);
+
+	$('.email').on('click', '.btn', function() {
+
+      var email = $('.email .form-control').val()
+          
+      $.ajax({
+        url: 'emails',
+        type: 'POST',
+        data: {email: {email: email}},
+        complete: function (data) {
+          	$('.email .input-group').html('<h3 class="fadeInDown animated">You\'ll hear from us soon!</h3>')
+        }
+      }); 
+    });
+
+});
