@@ -47,6 +47,7 @@ development:
 
 production:
   <<: *default
-  database: rails-starter-kit_production
-  username: rails-starter-kit
-  password: <%= ENV['RAILS-STARTER-KIT_DATABASE_PASSWORD'] %>
+  database: <%=ENV['DB_NAME']%>
+  username: <%=ENV['DB_USER']%>
+  password: <%=ENV['DB_PASS']%>
+  host: <%=ENV['DB_HOST']%>
