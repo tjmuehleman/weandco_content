@@ -1,5 +1,6 @@
 class ToolsController < ApplicationController
   before_action :set_tool, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with :name => "weandco", :password => "weloveco!"
 
   # GET /tools
   # GET /tools.json

@@ -1,5 +1,6 @@
 class ContentBlocksController < ApplicationController
   before_action :set_content_block, only: [:show, :edit, :update, :destroy]
+  http_basic_authenticate_with :name => "weandco", :password => "weloveco!"
 
   # GET /content_blocks
   # GET /content_blocks.json
