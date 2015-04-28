@@ -33,8 +33,11 @@
 	<% @content_blocks.each do |content| %>
 	
 		<div class="step">
-			<div class="image">
-			</div>
+		 	<% if !content.avatar.blank? %>
+				<div class="image" style="background: url(<%= content.avatar.url %>);background-size: cover;background-position: center;"></div>
+			<% else %>
+				<div class="image"></div>
+			<% end %>
 			<div class="info">
 
 
