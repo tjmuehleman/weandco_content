@@ -125,7 +125,7 @@ table {
 			border-radius: 0;
 			border: none;
 			border-bottom: 2px solid #fff;
-			background: #71B0BD;
+			background: rgba(255,255,255,.3);
 			box-shadow: none;
 			font-size: 21px;
 		}
@@ -134,10 +134,10 @@ table {
 		}
 		.input-group-btn {
 			.btn {
-				background: #71B0BD;
+				background: #fff;
 				border: none;
 				border-bottom: 2px solid #fff;
-				color: #fff;
+				color: #367380;
 				border-radius: 0;
 				-webkit-transition: all 500ms ease;
 				-moz-transition: all 500ms ease;
