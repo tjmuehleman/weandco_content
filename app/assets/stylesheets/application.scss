@@ -3497,3 +3497,7 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: slideOutUp;
           animation-name: slideOutUp;
 }
+
+.modal-backdrop {
+ z-index: 0;
+}
