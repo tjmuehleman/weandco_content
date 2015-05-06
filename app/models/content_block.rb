@@ -5,6 +5,7 @@ class ContentBlock < ActiveRecord::Base
     :styles => { :medium => "300x300>", :thumb => "100x100>" },
     :use_timestamp => false,
     :storage => :s3,
+    :s3_protocol => :https,
     :s3_credentials  => {      
       :bucket => ENV["BUCKET_NAME"],
       :ACCESS_KEY_ID => ENV["AWS_ACCESS_KEY_ID"],
